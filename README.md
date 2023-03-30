@@ -1,6 +1,6 @@
 #  1- Dlib'i Bilgisayara Kurma
 
-a) `git clone https://github.com/davisking/dlib` komutu ile source'undan indiriyoruz.
+a) `git clone https://github.com/davisking/dlib.git` komutu ile source'undan indiriyoruz.
 
 b) `cd dlib` ile indirilen dlib dizininine giriyoruz.
 
@@ -14,7 +14,7 @@ f) `sudo make install` ile de Dlib'i kuruyoruz.
 
 # 2- OpenCV'yi Bilgisayara Kurma
 
-a) `git clone https://github.com/opencv/opencv` komutu ile source'undan indiriyoruz.
+a) `git clone https://github.com/opencv/opencv.git` komutu ile source'undan indiriyoruz.
 
 b) `cd opencv` ile indirilen opencv dizininine giriyoruz.
 
