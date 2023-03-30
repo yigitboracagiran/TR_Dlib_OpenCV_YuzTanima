@@ -10,6 +10,6 @@ c) `mkdir build` ile build klasörü oluşturuyoruz.
 
 d) `cd build` ile oluşturduğumuz dizinine gidiyoruz.
 
-e) `cmake ..`
+e) `cmake ..` ile build klasörünün konfigürasyonu yapılıyor.
 
-f) `sudo make install`
+f) `sudo make install` ile de Dlib'i kuruyoruz.
