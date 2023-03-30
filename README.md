@@ -1,6 +1,4 @@
-# TR_Dlib_OpenCV_YuzTanima
-
-1- DLIB'i Bilgisayara Kurma
+#  1- Dlib'i Bilgisayara Kurma
 
 a) `git clone https://github.com/davisking/dlib` komutu ile source'undan indiriyoruz.
 
@@ -13,3 +11,17 @@ d) `cd build` ile oluşturduğumuz dizinine gidiyoruz.
 e) `cmake ..` ile build klasörünün konfigürasyonu yapılıyor.
 
 f) `sudo make install` ile de Dlib'i kuruyoruz.
+
+# 2- OpenCV'yi Bilgisayara Kurma
+
+a) `git clone https://github.com/opencv/opencv` komutu ile source'undan indiriyoruz.
+
+b) `cd opencv` ile indirilen opencv dizininine giriyoruz.
+
+c) `mkdir build` ile build klasörü oluşturuyoruz.
+
+d) `cd build` ile oluşturduğumuz dizinine gidiyoruz.
+
+e) `cmake ..` ile build klasörünün konfigürasyonu yapılıyor.
+
+f) `sudo make install` ile de Opencv'yi kuruyoruz.
