@@ -2,16 +2,16 @@
 
 1- DLIB'i Bilgisayara Kurma
 
-a) 'git clone https://github.com/davisking/dlib' komutu ile source'undan indiriyoruz.
+a) `git clone https://github.com/davisking/dlib` komutu ile source'undan indiriyoruz.
 
-b) 'cd dlib' ile indirilen dlib dizininine giriyoruz.
+b) `cd dlib` ile indirilen dlib dizininine giriyoruz.
 
-c) 'mkdir build' ile build klasörü oluşturuyoruz.
+c) `mkdir build` ile build klasörü oluşturuyoruz.
 
-d) 'cd build' ile oluşturduğumuz dizinine gidiyoruz.
+d) `cd build` ile oluşturduğumuz dizinine gidiyoruz.
 
-e) 'cmake ..'
+e) `cmake ..`
 
-f) 'sudo make'
+f) `sudo make`
 
-g) 'sudo install'
+g) `sudo install`
