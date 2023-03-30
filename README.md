@@ -14,4 +14,4 @@ e) `cmake ..`
 
 f) `sudo make`
 
-g) `sudo install`
+g) `sudo make install`
