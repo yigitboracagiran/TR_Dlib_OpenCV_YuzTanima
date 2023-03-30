@@ -12,6 +12,4 @@ d) `cd build` ile oluşturduğumuz dizinine gidiyoruz.
 
 e) `cmake ..`
 
-f) `sudo make`
-
-g) `sudo make install`
+f) `sudo make install`
