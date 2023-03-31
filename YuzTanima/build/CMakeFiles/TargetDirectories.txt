@@ -1,0 +1,3 @@
+/home/zeobora/kodlar/YuzTanima/build/CMakeFiles/yuzTanima.dir
+/home/zeobora/kodlar/YuzTanima/build/CMakeFiles/edit_cache.dir
+/home/zeobora/kodlar/YuzTanima/build/CMakeFiles/rebuild_cache.dir
