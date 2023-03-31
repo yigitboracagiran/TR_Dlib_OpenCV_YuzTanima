@@ -1,4 +1,14 @@
-#  1- Dlib'i Bilgisayara Kurma
+# 1- Program Hakkında 
+
+a) Program 3 farklı koddan oluşmaktadır: Fotoğraf Çekme, Model Eğitme, Yüz Tanıma.
+
+a-1) Model eğitimi için OpenCV'yi kullanarak bilgisayarın kamerası ile fotoğraf çeken bir C++17 kodu hazırladım.
+
+a-2) C++17, OpenCV ve Dlib ile çekilen bu fotoğrafları kullanarak modeli eğiten bir algoritma hazırladım. Yüzlerin özelliklerini ve kişinin isimlerini iki .txt dosyasına kaydettim.
+
+a-3) Yine C++17, OpenCV ve Dlib kullanarak, eğitilen model ile kameradan gelen canlı veriyi karşılaştıran ve kişiyi tahmin etmeye çalışan bir program hazırladım.
+
+#  2- Dlib'i Bilgisayara Kurma
 
 a) `git clone https://github.com/davisking/dlib.git` komutu ile source'undan indiriyoruz.
 
@@ -12,7 +22,7 @@ e) `cmake ..` ile build klasörünün konfigürasyonu yapılıyor.
 
 f) `sudo make install` ile de Dlib'i kuruyoruz.
 
-# 2- OpenCV'yi Bilgisayara Kurma
+# 1- OpenCV'yi Bilgisayara Kurma
 
 a) `git clone https://github.com/opencv/opencv.git` komutu ile source'undan indiriyoruz.
 
