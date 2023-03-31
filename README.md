@@ -22,7 +22,7 @@ e) `cmake ..` ile build klasörünün konfigürasyonu yapılıyor.
 
 f) `sudo make install` ile de Dlib'i kuruyoruz.
 
-# 1- OpenCV'yi Bilgisayara Kurma
+# 3- OpenCV'yi Bilgisayara Kurma
 
 a) `git clone https://github.com/opencv/opencv.git` komutu ile source'undan indiriyoruz.
 
