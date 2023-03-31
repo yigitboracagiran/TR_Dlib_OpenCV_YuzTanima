@@ -1,12 +1,14 @@
 # 1- Program Hakkında 
 
-a) Program 3 farklı koddan oluşmaktadır: Fotoğraf Çekme, Model Eğitme, Yüz Tanıma.
+a) Program Ubuntu 20.04'te hazırlanmıştır.
 
-a-1) Model eğitimi için OpenCV'yi kullanarak bilgisayarın kamerası ile fotoğraf çeken bir C++17 kodu hazırladım.
+b) Program 3 farklı koddan oluşmaktadır: Fotoğraf Çekme, Model Eğitme, Yüz Tanıma.
 
-a-2) C++17, OpenCV ve Dlib ile çekilen bu fotoğrafları kullanarak modeli eğiten bir algoritma hazırladım. Yüzlerin özelliklerini ve kişinin isimlerini iki .txt dosyasına kaydettim.
+b-1) Model eğitimi için OpenCV'yi kullanarak bilgisayarın kamerası ile fotoğraf çeken bir C++17 kodu hazırladım.
 
-a-3) Yine C++17, OpenCV ve Dlib kullanarak, eğitilen model ile kameradan gelen canlı veriyi karşılaştıran ve kişiyi tahmin etmeye çalışan bir program hazırladım.
+b-2) C++17, OpenCV ve Dlib ile çekilen bu fotoğrafları kullanarak modeli eğiten bir algoritma hazırladım. Yüzlerin özelliklerini ve kişinin isimlerini iki .txt dosyasına kaydettim.
+
+b-3) Yine C++17, OpenCV ve Dlib kullanarak, eğitilen model ile kameradan gelen canlı veriyi karşılaştıran ve kişiyi tahmin etmeye çalışan bir program hazırladım.
 
 #  2- Dlib'i Bilgisayara Kurma
 
