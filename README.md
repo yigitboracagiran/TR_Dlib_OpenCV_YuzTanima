@@ -68,6 +68,40 @@ Not: Kişinin klasörü daha önceden bulunuyorsa "Bu Isimde Klasor Daha Once Ol
 
 k) Kişinin adının girilmesinin ardından "boşluk" tuşuna basıldığında fotoğraf çeker, "q" tuşuna basılırsa kodu sonlandırır.
 
+Not: Her kişinin bir fotoğrafının çekilmesi gerekmektedir yoksa model eğitimi YAPILAMAZ!
+
 Not: Fotoğraf çekimi başarılı olursa "Fotograf Basariyla Olusturuldu." geri dönüşü yapılır.
 
-Not: Her kişinin bir fotoğrafının çekilmesi yeterlidir.
+# 5- Model Eğitimi
+
+a) `cd ModelEgitimi` komutu ile kodun bulunduğu dizine gidiyoruz.
+
+b) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
+
+c) `cd build/` komutu ile konfigüre edilen dizine gidiyoruz.
+
+d) `sudo make` komutu ile kodu derliyoruz.
+
+e) `./modelEgitimi` komutu ile kodu çalıştırıyoruz.
+
+Not: Aşağıdaki çıktı elde edilirse kod başarıyla çalışmıştır:
+
+Model Egitimi Sonlandi!
+
+Dosyaya Basariyla Yazildi!
+
+Dosyaya Basariyla Yazildi!
+
+# 6- Yüz Tanıma
+
+a) `cd YuzTanima` komutu ile kodun bulunduğu dizine gidiyoruz.
+
+b) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
+
+c) `cd build/` komutu ile konfigüre edilen dizine gidiyoruz.
+
+d) `sudo make` komutu ile kodu derliyoruz.
+
+e) `./yuzTanima` komutu ile kodu çalıştırıyoruz.
+
+Not: "Tespit Edilen Yüz: Kişi İsmi" veya "Yuz Tespit Edilemedi!" çıktıları elde edilmelidir.
