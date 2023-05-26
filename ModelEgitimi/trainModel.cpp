@@ -43,23 +43,15 @@ int main(void){
     //Resimleri ve Kisi Isimlerini Okuma
     int kisiSayisi = 0;
     int resimSayisi = 0;
-    const char *dosyaYolu = "/home/zeobora/kodlar/ModelEgitimi/dataset/";
-    int a = 0;
+    const char *dosyaYolu = "/home/zeobora/Desktop/ModelEgitimi/dataset/";
 
     for (const auto &entry : std::filesystem::directory_iterator(dosyaYolu)){
-        kisiSayisi++;
-        names[a] = new char[ strlen( entry.path().c_str() ) - strlen( dosyaYolu ) + 1 ];
-        strncpy( names[a], ( entry.path().c_str() + strlen(dosyaYolu) ), ( strlen( entry.path().c_str() ) - strlen( dosyaYolu ) + 1 ) );
-        for ( const auto &entry1 : std::filesystem::directory_iterator( entry.path() ) ){
-            resimSayisi++;
-            resimYollari[a] = new char[ strlen( entry1.path().c_str() ) + 1 ];
-            strncpy( resimYollari[a++], ( entry1.path().c_str() ), ( strlen( entry1.path().c_str() ) + 1 ) );
+        for ( const auto &entry1 : std::filesystem::directory_iterator( entry.path() ) ){  
+            resimYollari[resimSayisi] = new char[ strlen( entry1.path().c_str() ) + 1 ];
+            strncpy( resimYollari[resimSayisi++], ( entry1.path().c_str() ), ( strlen( entry1.path().c_str() ) + 1 ) );
+            names[kisiSayisi] = new char[ strlen( entry.path().c_str() ) - strlen( dosyaYolu ) + 1 ];
+            strncpy( names[kisiSayisi++], ( entry.path().c_str() + strlen(dosyaYolu) ), ( strlen( entry.path().c_str() ) - strlen( dosyaYolu ) + 1 ) );
         }
-    }
-    
-    std::cout << "Dosya Isimleri: "; //Dosyalarin isimlerini ekrana yazdiriyoruz.
-    for ( int i = 0 ; i < kisiSayisi ; i++ ){
-        std::cout << names[i] << " " << std::endl;
     }
     
     std::cout << "Dosyalarin Konumlari: " << std::endl; //Dosyalarin konumlarini ekrana yazdiriyoruz.
@@ -67,12 +59,17 @@ int main(void){
         std::cout << resimYollari[i] << std::endl;
     }
 
+    std::cout << "Dosya Isimleri: "; //Dosyalarin isimlerini ekrana yazdiriyoruz.
+    for ( int i = 0 ; i < kisiSayisi ; i++ ){
+        std::cout << names[i] << " " << std::endl;
+    }
+    
     //Model Egitiminde Kullanilacaklar
     frontal_face_detector detector = get_frontal_face_detector();
     shape_predictor pose_model;
-    deserialize("/home/zeobora/kodlar/ModelEgitimi/models/shape_predictor_68_face_landmarks.dat") >> pose_model;
+    deserialize("/home/zeobora/Desktop/ModelEgitimi/models/shape_predictor_68_face_landmarks.dat") >> pose_model;
     anet_type net;
-    deserialize("/home/zeobora/kodlar/ModelEgitimi/models/dlib_face_recognition_resnet_model_v1.dat") >> net;
+    deserialize("/home/zeobora/Desktop/ModelEgitimi/models/dlib_face_recognition_resnet_model_v1.dat") >> net;
     cv::Mat image, imageResize, rgb;
     std::cout << "Model Egitimi Basliyor..." << std::endl;
     std::vector<matrix<rgb_pixel>> faces;
@@ -82,7 +79,7 @@ int main(void){
     double duration;
 
     //Model Egitimi
-    for (int i = 0 ; i < kisiSayisi ; i++){
+    for (int i = 0 ; i < resimSayisi ; i++){
         start = std::clock(); 
         image = cv::imread( resimYollari[i], cv::IMREAD_GRAYSCALE );
         resize(image, image, cv::Size(image.cols/2, image.rows/2));
@@ -90,22 +87,13 @@ int main(void){
         std::vector<rectangle> faceRects = detector(img);
         std::vector<full_object_detection> shapes;
         matrix<rgb_pixel> face_chip;
-        for (int j = 0; j < faceRects.size(); ++j){
-            full_object_detection shape = pose_model(img, faceRects[j]);
-            shapes.push_back(shape); 
-            extract_image_chip(img, get_face_chip_details(shape, 150, 0.25), face_chip);
-            faces.push_back(std::move(face_chip));
-        }
+        full_object_detection shape = pose_model(img, faceRects[0]);
+        shapes.push_back(shape); 
+        extract_image_chip(img, get_face_chip_details(shape, 150, 0.25), face_chip);
+        faces.push_back(std::move(face_chip));
         duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
         std::cout << duration << " saniye surdu." << std::endl;
-        // while(1){
-        //     cv::imshow("Image", toMat(img)); 
-        //     char key=(cv::waitKey(1)&(0xFF));
-        //     if (key == 'q'){ 
-        //         break;
-        //     }
-        // }
-        std::cout << i+1 << "/" << kisiSayisi << std::endl;
+        std::cout << i+1 << "/" << resimSayisi << std::endl;
     }
     std::vector<matrix<float, 0, 1>> face_descriptors = net(faces);
     std::cout << "Model Egitimi Sonlandi!" << std::endl;
