@@ -99,7 +99,7 @@ int main(void){
         //Resmi okuma ve kucultme
         kamera.read( resim );
         resize( resim, resim, cv::Size( resim.cols/2, resim.rows/2 ) );
-        if(sayi%30==0){            
+        if(sayi%30==0){  // Her 30 frame'de bir kisinin yuzunun kontrolu yapiliyor.          
 
             //Yuzlerin konumunu belirleme
             cv_image<rgb_pixel> img( resim );
