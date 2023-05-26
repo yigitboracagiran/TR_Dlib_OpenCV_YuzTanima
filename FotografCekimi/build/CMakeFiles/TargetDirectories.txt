@@ -1,3 +1,0 @@
-/home/zeobora/kodlar/FotografCekimi/build/CMakeFiles/fotografCekimi.dir
-/home/zeobora/kodlar/FotografCekimi/build/CMakeFiles/edit_cache.dir
-/home/zeobora/kodlar/FotografCekimi/build/CMakeFiles/rebuild_cache.dir
