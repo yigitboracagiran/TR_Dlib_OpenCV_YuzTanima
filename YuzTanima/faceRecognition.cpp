@@ -35,7 +35,7 @@ using anet_type = loss_metric<fc_no_bias<128, avg_pool_everything<alevel0<alevel
 int main(void){
 
     // Yuz ozelliklerinin oldugu dosyayi aciyoruz...
-    const char *dosya1Yolu = "/home/zeobora/kodlar/ModelEgitimi/build/kisininOzellikleri.txt";
+    const char *dosya1Yolu = "/home/zeobora/Desktop/ModelEgitimi/build/kisininOzellikleri.txt";
     std::vector<std::vector<double>> matrix1;
     std::ifstream dosya1( dosya1Yolu );
     if( dosya1.is_open() ) {
@@ -58,7 +58,7 @@ int main(void){
     }
 
     //Kisi isimlerinin oldugu dosyayi aciyoruz...
-    const char *dosya2Yolu = "/home/zeobora/kodlar/ModelEgitimi/build/kisilerinIsimleri.txt";
+    const char *dosya2Yolu = "/home/zeobora/Desktop/ModelEgitimi/build/kisilerinIsimleri.txt";
     std::ifstream dosya2( dosya2Yolu );
     std::vector<std::vector<std::string>> matrix2;
     if ( dosya2.is_open() ) {
@@ -82,9 +82,9 @@ int main(void){
     //Model egitiminde kullanilacaklar...
     frontal_face_detector yuzTespitEdici = get_frontal_face_detector();
     shape_predictor pose_model;
-    deserialize("/home/zeobora/kodlar/ModelEgitimi/models/shape_predictor_68_face_landmarks.dat") >> pose_model;
+    deserialize("/home/zeobora/Desktop/ModelEgitimi/models/shape_predictor_68_face_landmarks.dat") >> pose_model;
     anet_type net;
-    deserialize("/home/zeobora/kodlar/ModelEgitimi/models/dlib_face_recognition_resnet_model_v1.dat") >> net;
+    deserialize("/home/zeobora/Desktop/ModelEgitimi/models/dlib_face_recognition_resnet_model_v1.dat") >> net;
 
     // Kamera acma
     cv::VideoCapture kamera( 0 );
