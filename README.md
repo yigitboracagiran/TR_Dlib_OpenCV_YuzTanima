@@ -76,19 +76,29 @@ Not: Fotoğraf çekimi başarılı olursa "Fotograf Basariyla Olusturuldu." geri
 
 # 5- Model Eğitimi
 
-a) `cd ModelEgitimi` komutu ile kodun bulunduğu dizine gidiyoruz. ( Dosya neredeyse o dizine gidiniz. )
+a) "http://dlib.net/files/" sitesinden kodlarda "shape_predictor_68_face_landmarks.dat.bz2" dosyasını indiriyoruz.
+
+Not: Bu repo'ya konmamasının nedeni boyutunun 25 MB'den büyük olmasıdır.
+
+b) Dosyanın indirildiği dizine `cd Downloads/` komutu ile gidiyoruz.
+
+c) `bunzip2 shape_predictor_68_face_landmarks.dat.bz2` komutu ile dosyadan .bz2 uzantısını kaldırıyoruz.
+
+d) "shape_predictor_68_face_landmarks.dat" dosyasını "ModelEgitimi" klasörünün içindeki "models" klasörüne taşıyoruz.
+
+e) `cd ModelEgitimi` komutu ile kodun bulunduğu dizine gidiyoruz. ( Dosya neredeyse o dizine gidiniz. )
 
 Not: Kodu derlemeden önce koddaki dosya konumlarını kendinize göre ayarlayınız!!!
 
-b) `mkdir build` ile build klasörü oluşturuyoruz.
+f) `mkdir build` ile build klasörü oluşturuyoruz.
 
-c) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
+g) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
 
-d) `cd build/` komutu ile konfigüre edilen dizine gidiyoruz.
+h) `cd build/` komutu ile konfigüre edilen dizine gidiyoruz.
 
-e) `sudo make` komutu ile kodu derliyoruz.
+i) `sudo make` komutu ile kodu derliyoruz.
 
-f) `./modelEgitimi` komutu ile kodu çalıştırıyoruz.
+j) `./modelEgitimi` komutu ile kodu çalıştırıyoruz.
 
 Not: Aşağıdaki çıktı elde edilirse kod başarıyla çalışmıştır:
 
