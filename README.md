@@ -56,19 +56,21 @@ e) `cd ../FotografCekimi/` komutu ile fotoğraf çekimi kodunun bulunduğu dizin
 
 Not: Kodu derlemeden önce koddaki dosya konumlarını kendinize göre ayarlayınız!!!
 
-f) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
+f) `mkdir build` ile build klasörü oluşturuyoruz.
 
-g) `cd build/` komutu ile konfigüre edilen dizine gidiyoruz.
+g) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
 
-h) `make` komutu ile kodu derliyoruz.
+h) `cd build/` komutu ile konfigüre edilen dizine gidiyoruz.
 
-i) `./fotografCekimi` komutu ile kodu çalıştırıyoruz.
+i) `make` komutu ile kodu derliyoruz.
 
-j) Program Opencv kullanarak bilgisayarımız kamerasını açar ve ekranda gösterir. Ardından da "Kişinin Adını Giriniz: " diye bizden input alır.
+j) `./fotografCekimi` komutu ile kodu çalıştırıyoruz.
+
+k) Program Opencv kullanarak bilgisayarımız kamerasını açar ve ekranda gösterir. Ardından da "Kişinin Adını Giriniz: " diye bizden input alır.
 
 Not: Kişinin klasörü daha önceden bulunuyorsa "Bu Isimde Klasor Daha Once Olusturulmus!", bulunmuyorsa "Yeni Klasor Olusturuluyor!" geri dönüşü yapılır.
 
-k) Kişinin adının girilmesinin ardından "boşluk" tuşuna basıldığında fotoğraf çeker, "q" tuşuna basılırsa kodu sonlandırır.
+l) Kişinin adının girilmesinin ardından "boşluk" tuşuna basıldığında fotoğraf çeker, "q" tuşuna basılırsa kodu sonlandırır.
 
 Not: Fotoğraf çekimi başarılı olursa "Fotograf Basariyla Olusturuldu." geri dönüşü yapılır.
 
@@ -78,13 +80,15 @@ a) `cd ModelEgitimi` komutu ile kodun bulunduğu dizine gidiyoruz. ( Dosya nered
 
 Not: Kodu derlemeden önce koddaki dosya konumlarını kendinize göre ayarlayınız!!!
 
-b) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
+b) `mkdir build` ile build klasörü oluşturuyoruz.
 
-c) `cd build/` komutu ile konfigüre edilen dizine gidiyoruz.
+c) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
 
-d) `sudo make` komutu ile kodu derliyoruz.
+d) `cd build/` komutu ile konfigüre edilen dizine gidiyoruz.
 
-e) `./modelEgitimi` komutu ile kodu çalıştırıyoruz.
+e) `sudo make` komutu ile kodu derliyoruz.
+
+f) `./modelEgitimi` komutu ile kodu çalıştırıyoruz.
 
 Not: Aşağıdaki çıktı elde edilirse kod başarıyla çalışmıştır:
 
@@ -100,12 +104,14 @@ a) `cd YuzTanima` komutu ile kodun bulunduğu dizine gidiyoruz. ( Dosya neredeys
 
 Not: Kodu derlemeden önce koddaki dosya konumlarını kendinize göre ayarlayınız!!!
 
-b) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
+b) `mkdir build` ile build klasörü oluşturuyoruz.
 
-c) `cd build/` komutu ile konfigüre edilen dizine gidiyoruz.
+c) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
 
-d) `sudo make` komutu ile kodu derliyoruz.
+d) `cd build/` komutu ile konfigüre edilen dizine gidiyoruz.
 
-e) `./yuzTanima` komutu ile kodu çalıştırıyoruz.
+e) `sudo make` komutu ile kodu derliyoruz.
+
+f) `./yuzTanima` komutu ile kodu çalıştırıyoruz.
 
 Not: "Tespit Edilen Yüz: Kişi İsmi" veya "Yuz Tespit Edilemedi!" çıktıları elde edilmelidir.
