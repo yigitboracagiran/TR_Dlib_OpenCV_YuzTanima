@@ -15,7 +15,7 @@ int main(){
     cout << "Kisinin Adini Giriniz: ";
     cin >> yeniKlasorAdi;
 
-    const char *klasor = "/home/zeobora/Desktop/dataset/"; //Klasorun eklenecegi yer belirleniyor.
+    const char *klasor = "/home/zeobora/Desktop/ModelEgitimi/dataset/"; //Klasorun eklenecegi yer belirleniyor.
 
     size_t uzunluk1 = strlen(yeniKlasorAdi); //Olusturulacak klasorun adi olusturuluyor. Ornek: /home/zeobora/Desktop/dataset/yeniKlasor
     size_t uzunluk2 = strlen(klasor);
