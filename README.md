@@ -62,7 +62,7 @@ g) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre edi
 
 h) `cd build/` komutu ile konfigüre edilen dizine gidiyoruz.
 
-i) `make` komutu ile kodu derliyoruz.
+i) `sudo make` komutu ile kodu derliyoruz.
 
 j) `./fotografCekimi` komutu ile kodu çalıştırıyoruz.
 
