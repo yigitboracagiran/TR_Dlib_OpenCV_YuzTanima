@@ -13,7 +13,7 @@
 #include <dlib/image_io.h>
 #include <dlib/image_processing/frontal_face_detector.h>
 
-#define MAX_KISI_SAYISI 25
+#define MAX_KISI_SAYISI 50
 using namespace dlib;
 
 template <template <int,template<typename>class,int,typename> class block, int N, template<typename>class BN, typename SUBNET>
