@@ -1,3 +1,0 @@
-/home/zeobora/kodlar/ModelEgitimi/build/CMakeFiles/modelEgitimi.dir
-/home/zeobora/kodlar/ModelEgitimi/build/CMakeFiles/edit_cache.dir
-/home/zeobora/kodlar/ModelEgitimi/build/CMakeFiles/rebuild_cache.dir
