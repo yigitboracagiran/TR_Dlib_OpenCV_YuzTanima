@@ -44,7 +44,7 @@ a) `git clone https://github.com/yigitboracagiran/TR_Dlib_OpenCV_YuzTanima.git` 
 
 Not: Fotoğraf çekiminin yapılabilmesi için "ModelEgitimi" isimli klasörde "Dataset" isimli bir klasör bulunmalıdır. 
 
-b) `cd ModelEgitimi` komutu ile Dataset'in olması gerektiği dizine gidiyoruz.
+b) `cd ModelEgitimi` komutu ile Dataset'in olması gerektiği dizine gidiyoruz. ( Dosya neredeyse o dizine gidiniz. )
 
 c) `ls` komutu ile "Dataset" isimli bir klasör bulunuyor mu kontrol ediyoruz.
 
@@ -53,6 +53,8 @@ Not: Bu repo'yu ilk indirdiğinizde bulunmuyor, oluşturmanız gerekli.
 d) `mkdir Dataset` komutu ile "Dataset" klasörü oluşturuluyor.
 
 e) `cd ../FotografCekimi/` komutu ile fotoğraf çekimi kodunun bulunduğu dizinine gidiyoruz.
+
+Not: Kodu derlemeden önce koddaki dosya konumlarını kendinize göre ayarlayınız!!!
 
 f) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
 
@@ -68,13 +70,13 @@ Not: Kişinin klasörü daha önceden bulunuyorsa "Bu Isimde Klasor Daha Once Ol
 
 k) Kişinin adının girilmesinin ardından "boşluk" tuşuna basıldığında fotoğraf çeker, "q" tuşuna basılırsa kodu sonlandırır.
 
-Not: Her kişinin bir fotoğrafının çekilmesi gerekmektedir yoksa model eğitimi YAPILAMAZ!
-
 Not: Fotoğraf çekimi başarılı olursa "Fotograf Basariyla Olusturuldu." geri dönüşü yapılır.
 
 # 5- Model Eğitimi
 
-a) `cd ModelEgitimi` komutu ile kodun bulunduğu dizine gidiyoruz.
+a) `cd ModelEgitimi` komutu ile kodun bulunduğu dizine gidiyoruz. ( Dosya neredeyse o dizine gidiniz. )
+
+Not: Kodu derlemeden önce koddaki dosya konumlarını kendinize göre ayarlayınız!!!
 
 b) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
 
@@ -94,7 +96,9 @@ Dosyaya Basariyla Yazildi!
 
 # 6- Yüz Tanıma
 
-a) `cd YuzTanima` komutu ile kodun bulunduğu dizine gidiyoruz.
+a) `cd YuzTanima` komutu ile kodun bulunduğu dizine gidiyoruz. ( Dosya neredeyse o dizine gidiniz. )
+
+Not: Kodu derlemeden önce koddaki dosya konumlarını kendinize göre ayarlayınız!!!
 
 b) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
 
