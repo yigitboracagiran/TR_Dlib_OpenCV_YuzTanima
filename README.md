@@ -70,9 +70,11 @@ k) Program Opencv kullanarak bilgisayarımız kamerasını açar ve ekranda gös
 
 Not: Kişinin klasörü daha önceden bulunuyorsa "Bu Isimde Klasor Daha Once Olusturulmus!", bulunmuyorsa "Yeni Klasor Olusturuluyor!" geri dönüşü yapılır.
 
-l) Kişinin adının girilmesinin ardından "boşluk" tuşuna basıldığında fotoğraf çeker, "q" tuşuna basılırsa kodu sonlandırır.
+l) Kişinin adının girilmesinin ardından; kamera ekranı diğer sekmelerin üstündeyken "boşluk" tuşuna basıldığında fotoğraf çeker, "q" tuşuna basılırsa kodu sonlandırır.
 
 Not: Fotoğraf çekimi başarılı olursa "Fotograf Basariyla Olusturuldu." geri dönüşü yapılır.
+
+Not: İstenilen sayıda fotoğraf çekilebilir ancak 1 fotoğrafla da olsa kişi tahmini başarıyla yapılmaktadır.
 
 # 5- Model Eğitimi
 
@@ -123,5 +125,7 @@ d) `cd build/` komutu ile konfigüre edilen dizine gidiyoruz.
 e) `sudo make` komutu ile kodu derliyoruz.
 
 f) `./yuzTanima` komutu ile kodu çalıştırıyoruz.
+
+g) Kamera ekranı diğer sekmelerin üstündeyken "q" tuşuna basılırsa kodu sonlandırır. 
 
 Not: "Tespit Edilen Yüz: Kişi İsmi" veya "Yuz Tespit Edilemedi!" çıktıları elde edilmelidir.
