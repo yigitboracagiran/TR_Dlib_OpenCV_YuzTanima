@@ -10,7 +10,23 @@ b-2) C++17, OpenCV ve Dlib ile çekilen bu fotoğrafları kullanarak modeli eği
 
 b-3) Yine C++17, OpenCV ve Dlib kullanarak, eğitilen model ile kameradan gelen canlı veriyi karşılaştıran ve kişiyi tahmin etmeye çalışan bir kod hazırlandı.
 
-#  2- Dlib'i Bilgisayara Kurma
+# 2- CMake'i Bilgisayara Kurma
+
+1- `git clone https://github.com/Kitware/CMake.git`
+
+2- `cd CMake/`
+
+3- `mkdir build`
+
+4- `cd build/`
+
+5- `../bootstrap`
+
+6- `make`
+
+7- `sudo make insall`
+
+# 3- Dlib'i Bilgisayara Kurma
 
 a) `git clone https://github.com/davisking/dlib.git` komutu ile source'undan indiriyoruz.
 
@@ -24,7 +40,7 @@ e) `cmake ..` ile build klasörünün konfigürasyonu yapılıyor.
 
 f) `sudo make install` ile de Dlib'i kuruyoruz.
 
-# 3- OpenCV'yi Bilgisayara Kurma
+# 4- OpenCV'yi Bilgisayara Kurma
 
 a) `git clone https://github.com/opencv/opencv.git` komutu ile source'undan indiriyoruz.
 
@@ -38,7 +54,7 @@ e) `cmake ..` ile build klasörünün konfigürasyonu yapılıyor.
 
 f) `sudo make install` ile de Opencv'yi kuruyoruz.
 
-# 4- Kişilerin Fotoğraf Çekimi
+# 5- Kişilerin Fotoğraf Çekimi
 
 a) `git clone https://github.com/yigitboracagiran/TR_Dlib_OpenCV_YuzTanima.git` komutu ile bu repo'yu indiriyoruz.
 
@@ -76,7 +92,7 @@ Not: Fotoğraf çekimi başarılı olursa "Fotograf Basariyla Olusturuldu." geri
 
 Not: İstenilen sayıda fotoğraf çekilebilir ancak 1 fotoğrafla da olsa kişi tahmini başarıyla yapılmaktadır.
 
-# 5- Model Eğitimi
+# 6- Model Eğitimi
 
 a) "http://dlib.net/files/" sitesinden kodlarda "shape_predictor_68_face_landmarks.dat.bz2" dosyasını indiriyoruz.
 
@@ -110,7 +126,7 @@ Dosyaya Basariyla Yazildi!
 
 Dosyaya Basariyla Yazildi!
 
-# 6- Yüz Tanıma
+# 7- Yüz Tanıma
 
 a) `cd YuzTanima` komutu ile kodun bulunduğu dizine gidiyoruz. ( Dosya neredeyse o dizine gidiniz. )
 
