@@ -12,7 +12,7 @@ b-3) Yine C++17, OpenCV ve Dlib kullanarak, eğitilen model ile kameradan gelen 
 
 # 2- CMake'i Bilgisayara Kurma
 
-Not: Eğer bilgisayarınızda kuruluysa, diğer 5, 6 ve 7. adımlardaki CMakeLists.txt dosyalarındaki 1. satırlarında bulunan "cmake_minimum_required(VERSION 3.26)" versiyonu bilgisayarınızdaki versiyona göre uyarlayınız.
+Not: Eğer bilgisayarınızda kuruluysa, 5, 6 ve 7. adımlardaki CMakeLists.txt dosyalarındaki 1. satırlarında bulunan "cmake_minimum_required(VERSION 3.26)" versiyonu bilgisayarınızdaki versiyona göre uyarlayınız.
 
 Not: Versiyonu öğrenmek için `cmake --version` komutunu çalıştırınız.
 
