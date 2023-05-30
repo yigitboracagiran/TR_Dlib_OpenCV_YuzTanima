@@ -12,6 +12,8 @@ b-3) Yine C++17, OpenCV ve Dlib kullanarak, eğitilen model ile kameradan gelen 
 
 # 2- CMake'i Bilgisayara Kurma
 
+Not: Eğer bilgisayarınızda kuruluysa, diğer 5, 6 ve 7. adımlardaki CMakeLists.txt dosyalarındaki 1. satırlarında bulunan "cmake_minimum_required(VERSION 3.26)" versiyonu bilgisayarınızdaki versiyona göre uyarlayınız. Versiyonu öğrenmek için `cmake --version` komutunu çalıştırınız.
+
 1- `git clone https://github.com/Kitware/CMake.git`
 
 2- `cd CMake/`
@@ -74,6 +76,8 @@ Not: Kodu derlemeden önce koddaki dosya konumlarını kendinize göre ayarlayı
 
 f) `mkdir build` ile build klasörü oluşturuyoruz.
 
+Not: CMakeLists.txt dosyalarındaki 1. satırlarında bulunan "cmake_minimum_required(VERSION 3.26)" versiyonu bilgisayarınızdaki versiyona göre uyarlayınız. Versiyonu öğrenmek için `cmake --version` komutunu çalıştırınız.
+
 g) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
 
 h) `cd build/` komutu ile konfigüre edilen dizine gidiyoruz.
@@ -110,6 +114,8 @@ Not: Kodu derlemeden önce koddaki dosya konumlarını kendinize göre ayarlayı
 
 f) `mkdir build` ile build klasörü oluşturuyoruz.
 
+Not: CMakeLists.txt dosyalarındaki 1. satırlarında bulunan "cmake_minimum_required(VERSION 3.26)" versiyonu bilgisayarınızdaki versiyona göre uyarlayınız. Versiyonu öğrenmek için `cmake --version` komutunu çalıştırınız.
+
 g) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
 
 h) `cd build/` komutu ile konfigüre edilen dizine gidiyoruz.
@@ -133,6 +139,8 @@ a) `cd YuzTanima` komutu ile kodun bulunduğu dizine gidiyoruz. ( Dosya neredeys
 Not: Kodu derlemeden önce koddaki dosya konumlarını kendinize göre ayarlayınız!!!
 
 b) `mkdir build` ile build klasörü oluşturuyoruz.
+
+Not: CMakeLists.txt dosyalarındaki 1. satırlarında bulunan "cmake_minimum_required(VERSION 3.26)" versiyonu bilgisayarınızdaki versiyona göre uyarlayınız. Versiyonu öğrenmek için `cmake --version` komutunu çalıştırınız.
 
 c) `cmake -S . -B build/` komutu ile "CMakeLists.txt" dosyasını konfigüre ediyoruz.
 
