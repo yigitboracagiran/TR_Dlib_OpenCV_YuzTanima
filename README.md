@@ -14,7 +14,7 @@ b-3) Yine C++17, OpenCV ve Dlib kullanarak, eğitilen model ile kameradan gelen 
 
 Not: Eğer bilgisayarınızda kuruluysa, diğer 5, 6 ve 7. adımlardaki CMakeLists.txt dosyalarındaki 1. satırlarında bulunan "cmake_minimum_required(VERSION 3.26)" versiyonu bilgisayarınızdaki versiyona göre uyarlayınız.
 
-Versiyonu öğrenmek için `cmake --version` komutunu çalıştırınız.
+Not: Versiyonu öğrenmek için `cmake --version` komutunu çalıştırınız.
 
 1- `git clone https://github.com/Kitware/CMake.git`
 
