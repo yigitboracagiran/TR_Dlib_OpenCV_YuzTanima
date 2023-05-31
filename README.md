@@ -4,11 +4,11 @@ a) Program Ubuntu 20.04'te hazırlanmıştır.
 
 b) Program 3 farklı koddan oluşmaktadır: Fotoğraf Çekme, Model Eğitme, Yüz Tanıma.
 
-   A) Model eğitimi için OpenCV'yi kullanarak bilgisayarın kamerası ile fotoğraf çeken bir C++17 kodu hazırlandı.
+b-1) Model eğitimi için OpenCV'yi kullanarak bilgisayarın kamerası ile fotoğraf çeken bir C++17 kodu hazırlandı.
 
-   B) C++17, OpenCV ve Dlib ile çekilen bu fotoğrafları kullanarak modeli eğiten bir algoritma hazırlandı. Yüzlerin özelliklerini ve kişinin isimlerini iki .txt dosyasına kayededildi.
+b-2) C++17, OpenCV ve Dlib ile çekilen bu fotoğrafları kullanarak modeli eğiten bir algoritma hazırlandı. Yüzlerin özelliklerini ve kişinin isimlerini iki .txt dosyasına kayededildi.
 
-   C) Yine C++17, OpenCV ve Dlib kullanarak, eğitilen model ile kameradan gelen canlı veriyi karşılaştıran ve kişiyi tahmin etmeye çalışan bir kod hazırlandı.
+b-3) Yine C++17, OpenCV ve Dlib kullanarak, eğitilen model ile kameradan gelen canlı veriyi karşılaştıran ve kişiyi tahmin etmeye çalışan bir kod hazırlandı.
 
 # 2- CMake'i Bilgisayara Kurma
 
