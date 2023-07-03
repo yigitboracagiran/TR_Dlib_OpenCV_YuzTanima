@@ -85,6 +85,7 @@ int main(void){
         resize(image, image, cv::Size(image.cols/2, image.rows/2));
         cv_image<unsigned char> img(image);
         std::vector<rectangle> faceRects = detector(img);
+        if ( faceRects.empty() ) continue;
         std::vector<full_object_detection> shapes;
         matrix<rgb_pixel> face_chip;
         full_object_detection shape = pose_model(img, faceRects[0]);
